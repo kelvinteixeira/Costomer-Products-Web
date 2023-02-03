@@ -1,11 +1,22 @@
-import Typography from '@mui/material/Typography'
-import { CardContainer, PageContent } from './styles'
+import { Button } from '@mui/material'
+import { CardButtons, CardContainer, CardContent, PageContent, CardTitle } from './styles'
 
 export function Home() {
   return (
     <PageContent>
       <CardContainer >
-        <Typography align='center' variant='h4'>O que deseja cadastrar?</Typography>
+        <CardContent>
+          <CardTitle variant='h5'>O que deseja cadastrar?</CardTitle>
+          <CardButtons >
+            <Button variant='contained' color='inherit'>
+              Novo cliente
+            </Button>
+
+            <Button variant='contained' color='inherit'>
+              Novo produto
+            </Button>
+          </CardButtons>
+        </CardContent>
       </CardContainer>
     </PageContent>
   )
